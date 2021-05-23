@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --nav-color: #274754;
+    --color-one: #2A9D8F;
+    --color-two: #E9C46A;
+    --color-three: #F4A261;
+    --color-four: #E76F51; 
+    --none: transparent; 
+    --white: #f5f5f5;
+}
+.menu {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--nav-color);
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    margin-left: 1.8rem;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+
+.menu-div ul {
+    width: 100%;
+    height: 5rem;
+    display: inline-block;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-div li {
+    float: right;
+    list-style-type: none;
+    margin-right: 2rem;
+    margin-top: 1rem; 
+  }
+
+
+.menu-div a {
+    display: block;
+    padding: 8px;
+    background-color: var(--none);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+.menu-div li a:hover {
+    background-color: #3b728a96;
+    transform: scale(1.05);
+}
+  
+
+.evento-main {
+    width: 100%;
+    height: 700px;
+    background-color: var(--color-one);
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 50% 50%;
+}
+
+.image-evento-main {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    width: 700px;
+    height: 590px;
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    z-index: 1;
+}
+
+.text-evento-main {
+    grid-row: 1/2;
+    grid-column: 2/2;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    position: relative;
+    text-align: end;
+    margin-right: 2rem;
+    margin-top: 13rem;
+    font-size: 5rem;
+}
+
+
+.title:hover {
+    /*meter transformación zarpada*/
+}
+
+.description {
+    width: 500px;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    margin-left: 8.5rem;
+    margin-top: -5rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.artistas-main {
+    width: 100%;
+    height: 750px;
+    background-color: var(--color-four);
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#card-uno {
+    grid-row: 1/1;
+    grid-column: 1/1; 
+    background-color: var(--color-two);
+}
+/*
+#card-uno:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.03);
+}
+
+#card-dos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.03);
+}
+
+#card-tres:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.03);
+}
+*/
+
+
+#card-dos {
+    grid-row: 1/2;
+    grid-column: 2/2; 
+    background-color: var(--color-three);
+}
+
+.artista-img {
+   padding: 2rem;
+   margin: 2.5rem;
+}
+
+.artista-img:hover {
+    transform: scale(0.95);
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: var(--white);
+    text-align: center;
+    margin-top: -4rem;
+    font-size: 2rem;
+}
+
+#card-uno .name:hover {
+    background-color: #f3af01;
+}
+
+#card-dos .name:hover {
+    background-color:  #ff7300;
+}
+
+#card-tres .name:hover {
+    background-color: #ff3300c0;
+}
+
+.artista-descripcion {
+    width: 250px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    margin-top: 0rem;
+    text-align: justify;
+    font-size: 1rem;
+    margin-left: 6rem;
+}
+
+.entradas-main {
+    background-color: var(--color-one);
+    width: 100%;
+    height: 850px;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.item-a {
+    grid-row: 1/3 2/3 3/3;
+}
+
+
+.icon-entradas{
+    width: 120px;
+    height: 120px;
+    margin-top: 3rem;
+    margin-left: 10rem;
+
+}
+
+.title-sub {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: var(--white);
+    font-size: 4rem;
+    margin-top: -5rem;
+    margin-left: 20rem;
+}
+
+.entradas-descripcion {
+    width: 650px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    margin-top: -8rem;
+    text-align: justify;
+    font-size: 1rem;
+    margin-left: 35rem;
+}
+
+
+/*efectos hover para pasos de adquirir las entradas*/
+
+.item-a:hover{
+    box-shadow: 0 8px 16px 8px rgba(0,0,0,0.2), 0 6px 20px 8px rgba(0,0,0,0.19);
+}
+
+
+.item-b:hover{
+    box-shadow: 0 8px 16px 8px rgba(0,0,0,0.2), 0 6px 20px 8px rgba(0,0,0,0.19);
+}
+
+.item-c:hover{
+    box-shadow: 0 8px 16px 8px rgba(0,0,0,0.2), 0 6px 20px 8px rgba(0,0,0,0.19);
+}
+
+
+/******LOGIN********/
+.login-main {
+    background-color: var(--color-four);
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-rows: 49% 1% 49%;
+}
+
+.login-uno h1{
+    grid: 1/1;
+}
+
+.calltoaction-login {
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: var(--white);
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.divisor {
+    width: 10px;
+    background-color: var(--color-three);
+    height: 400px;
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: -5rem;
+}
+
+.login-tres {
+    grid-column: 3/3;
+}
+
+.reserva {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem; 
+    display: block;
+    margin-top: 8rem;
+    margin-left: -10rem;
+}
+
+.reserva-input {
+    width: 380px;
+    padding: 2px;
+    height: 25px;
+    background-color: var(--white);
+    border-radius: 25px;
+    border: 1px rgb(180, 179, 179) solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Poppins', sans-serif;
+    color: var(--nav-color);
+    text-indent: 20px;
+    
+
+}
+
+.reserva-input:focus {
+    outline: none;
+}
+
+.reserva-boton {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: 1.5rem;   
+    position: relative;
+    margin-top: 1rem;
+    background-color: var(--nav-color);
+    width: 385px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px transparent solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/**********FOOTER**********/
+.footer {
+    background-color: var(--nav-color);
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-rows: 50% 25% 25%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.logo-footer {
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+
+.footer-dos {
+    grid-row: 1/2;
+    grid-column: 2/2; 
+    margin-top: 5rem;
+}
+
+.footer-dos a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem; 
+    display: block;
+}
+
+.footer-tres{
+    grid-row: 1/3;
+    grid-column: 3/3; 
+    margin-top: 5rem;
+}
+
+.footer-tres a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem; 
+    display: block;
+}
+
+/*Efectos hover para el footer*/
+.logo-footer:hover {
+    transform: scale(1.05);
+}
